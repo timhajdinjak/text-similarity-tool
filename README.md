@@ -33,9 +33,13 @@ Pred izračunom podobnosti je mogoče besedilo poljubno predobdelati:
 
 Za vsako metriko je na voljo tudi podrobnejši prikaz v obliki dvodimenzionalne barvne predstavitve, ki na nivoju matrike beseda × beseda pokaže, kako si posamezne besede iz obeh besedil med seboj prispevajo k izračunani meri podobnosti.
 
+![Dvodimenzionalna barvna predstavitev prispevka posameznih besed](slike/embedding-card.png)
+
 ### Vizualizacija vektorskega prostora
 
 Aplikacija omogoča tudi vizualni prikaz vektorskega prostora besed obeh besedil, z izbiro med tremi metodami zmanjševanja dimenzionalnosti (PCA, t-SNE, UMAP) ter dvo- ali tridimenzionalnim prikazom.
+
+![Vizualizacija vektorskega prostora](slike/embedding-space-popravljen.png)
 
 ### Umetno popačenje besedila
 
@@ -47,6 +51,8 @@ Za preizkušanje robustnosti posameznih metrik je na voljo tudi možnost umetneg
 ### Korpusni način
 
 Poleg primerjave dveh besedil aplikacija ponuja tudi način *Corpus mode*, kjer uporabnik eno besedilo (poizvedbo) primerja hkrati z več dokumenti (korpus). Rezultat je za vsako metriko razvrstitev vseh dokumentov od najbolj do najmanj relevantnega glede na poizvedbo, kar na razumljiv način demonstrira postopek pridobivanja dokumentov (*retrieval*), ki je prvi korak pristopov RAG tehnologij. Rezultate je mogoče pregledovati v obliki razvrščenega seznama ali matričnega prikaza.
+
+![Korpusni način](slike/rag-rangiranje.png)
 
 ## Zagon aplikacije
 
